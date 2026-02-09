@@ -6,6 +6,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+    autoconf \
+    automake \
+    autoconf-archive \
     build-essential \
     ca-certificates \
     cmake \

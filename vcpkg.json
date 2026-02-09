@@ -2,7 +2,6 @@
     "name": "linux-vcpkg",
     "version-string": "0.1.0",
     "dependencies": [
-        "angelscript",
         "cpp-httplib",
         "cpp-jwt",
         {

@@ -1,18 +1,20 @@
+# docker build -f Dockerfile -t ghcr.io/lancerworldwide-oss/linux_vcpkg:latest .
+
 FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        build-essential \
-        ca-certificates \
-        cmake \
-        curl \
-        git \
-        ninja-build \
-        pkg-config \
-        unzip \
-        zip \
+    build-essential \
+    ca-certificates \
+    cmake \
+    curl \
+    git \
+    ninja-build \
+    pkg-config \
+    unzip \
+    zip \
     && rm -rf /var/lib/apt/lists/*
 
 # Install vcpkg

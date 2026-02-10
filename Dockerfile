@@ -6,16 +6,36 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+    '^libxcb.*-dev' \
     autoconf \
-    automake \
     autoconf-archive \
+    automake \
+    bison \
     build-essential \
     ca-certificates \
     cmake \
     curl \
+    flex \
     git \
+    libcurl4-openssl-dev \
+    libdrm-dev \
+    libegl1-mesa-dev \
+    libglu1-mesa-dev \
+    libiptc-dev \
+    libsystemd-dev \
+    libtool \
+    libudev-dev \
+    libx11-xcb-dev \
+    libxi-dev \
+    libxkbcommon-dev \
+    libxkbcommon-x11-dev \
+    libxrender-dev \
+    libxss-dev \
+    libxtables-dev \
     ninja-build \
     pkg-config \
+    python3-jinja2 \
+    tar \
     unzip \
     zip \
     && rm -rf /var/lib/apt/lists/*

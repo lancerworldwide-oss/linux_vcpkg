@@ -23,6 +23,7 @@ RUN apt-get update \
     libglu1-mesa-dev \
     libiptc-dev \
     libsystemd-dev \
+    libltdl-dev \
     libtool \
     libudev-dev \
     libx11-xcb-dev \
